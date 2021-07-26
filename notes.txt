@@ -1,0 +1,15 @@
+Code initialization
+--------------------
+--> I didn't got ay boiler plate for this one.. First I created a server.js file.. then installed express
+"npm install express"
+
+--> It installed node_modules..
+
+--> Then created package.json file and adede express in dependencies..
+then created all folders manually
+
+--> to install any module " npm i <modulename> " (eg: npm i mongoose)
+ANGULARJS APP
+--------------
+--> first create folder and do "npm init" --> it will create package.json
+--> then do "npm install express" --> follow as above
