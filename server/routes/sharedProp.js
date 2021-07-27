@@ -6,6 +6,7 @@ const configurations = require("../models/configurations");
 
 const dataFile = "./server/data/sharedProp.json";
 
+
 router.get("/:text", async (req, res) => {
   var query = req.params.text;
   var re = new RegExp(query, "gi");
@@ -19,6 +20,7 @@ router.get("/:text", async (req, res) => {
     res.status(500).send("Server Error");
   }
 });
+
 
 router.post("/", async (req, res) => {
   const { name, description, version, fit, tags } = req.body;

@@ -7,6 +7,8 @@ connectDB();
 
 app.use(express.json({ extended: false }));
 
+app.use(express.static('client'));
+
 app.use("/api/sharedProps", require("./server/routes/sharedProp"));
 
 app.listen(3500, () => {
