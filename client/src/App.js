@@ -6,13 +6,14 @@ import Navbar from "./components/layouts/navbar"
 import About from "./components/pages/about";
 import AddConfig  from "./components/pages/addConfig";
 import ConfigState from "./context/config/ConfigState";
-
+import background from "./images/Group2.jpg";
 
 const App = () => {
   return(
     <ConfigState>
     <Router>
-      <Fragment className='App'>
+      <div >
+      <Fragment  className='App'>
       <Navbar/>
       <div className='container'>
       <Switch>
@@ -22,6 +23,8 @@ const App = () => {
       </Switch>
       </div>
       </Fragment>
+      </div>
+
     </Router>
     </ConfigState>
   )
