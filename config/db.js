@@ -4,6 +4,8 @@ const dbURI = config.get("mongoURI");
 
 const connectDB = async () => {
   try {
+    console.log("before Connected");
+    console.log(dbURI);
     await mongoose.connect(dbURI, {
       useNewUrlParser: true,
       useUnifiedTopology: true,

@@ -6,6 +6,15 @@ const configurations = require("../models/configurations");
 
 const dataFile = "./server/data/sharedProp.json";
 
+router.get("/", async(req, res) => {
+  try {
+    const matchedProps = await configurations.find();
+    res.send(matchedProps);
+  } catch (err) {
+    console.log(err.message);
+    res.status(500).send("Server Error");
+  }
+});
 
 router.get("/:text", async (req, res) => {
   var query = req.params.text;

@@ -1,0 +1,144 @@
+
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  list-style: none;
+}
+
+html{
+  height:100%;
+
+}
+body{
+  font-size: 1rem;
+  line-height: 1.6;
+  height:100%;
+}
+
+.container {
+  position: fixed;
+  height:100%;
+  width: 90%;
+  display:flex;
+  background-color: #E5F7EC;
+}
+
+#icon{
+  height: 150px;
+  width: 150px;
+  margin: 60px;
+  margin-bottom: 75px;
+}
+
+.side-nav{
+  position: fixed;
+  left:0;
+  width:300px;
+  height:100%;
+  background:black;
+}
+
+.navItems{
+  margin-top: 5px;
+}
+
+.NavItem{
+  justify-content: center;
+  font-size: 1.2rem;
+  display: block;
+  color:white;
+  padding-left:80px;
+  padding-top: 30px;
+  padding-bottom:30px;
+  line-height:1px;
+
+}
+
+.container{
+  height:100%;
+  margin-left: 301px;
+  padding-top:40px;
+  padding-right:40px;
+}
+
+/* Forms */
+input{
+  margin: 20px 0px;
+  width: 500px;
+}
+
+#btncsv{
+  width:100px;
+  float:right
+}
+
+
+
+.searchForm{
+  margin-left:270px;
+}
+
+
+input[type="text"]{
+  
+  display: block;
+  padding:10px 5px;
+  padding-left:40px;
+  font-size: 1.2 rem;
+  border: 1px solid grey;
+  border-radius: 0.2rem;
+}
+
+.card{
+  width:600px;
+  margin-left:300px;
+  padding: 10px;
+  border: #ccc 1px dotted;
+  margin: 40px 0;
+  background-color: white;
+}
+
+.text-left{
+  text-align: left;
+}
+
+.badge{
+  font-size: 0.8 rem;
+  padding: 5px 10px;
+  text-align:center;
+  background-color: hotpink;
+  border-radius: 5px;
+}
+
+.badge-green{
+  background-color: green;
+
+}
+
+
+.input-icons i {
+  position: absolute;
+}
+
+.input-icons {
+  width: 100%;
+  margin-bottom: 10px;
+}
+
+.icon {
+  padding: 10px;
+  min-width: 40px;
+}
+
+.input-field {
+  padding: 10px;
+}
+
+.configs{
+  margin-left:300px;
+}
+
+
