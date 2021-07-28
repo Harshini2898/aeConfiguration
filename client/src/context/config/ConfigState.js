@@ -32,6 +32,20 @@ const ContactState = (props) => {
     dispatch({type:"CLEAR_SEARCH"});
   }
 
+  const addConfig = async (configItem) => {
+    const config = {
+      headers:{
+        "Content-Type": "application/json",
+      },
+    };
+    try{
+      const res = await axios.post("/api/sharedProps/", configItem, config);
+      dispatch({type: "ADD_CONFIG", payload: res.data});
+    } catch(err){
+      dispatch({type:"CONTACT_ERROR", payload: err.response.data.msg});
+    }
+  }
+
   return (
     <ConfigContext.Provider 
       value={{
@@ -41,7 +55,8 @@ const ContactState = (props) => {
         filtered: state.filtered,
         getConfigs,
         configSearch,
-        clearSearch
+        clearSearch,
+        addConfig
       }}
       >
         {props.children}

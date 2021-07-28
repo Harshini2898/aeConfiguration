@@ -17,12 +17,19 @@ const Configs = () => {
         <Fragment>
           {filtered ? (
             filtered.map((config) => (
-              <ConfigItem config={config} />
+              <Fragment>
+                  <ConfigItem config={config} />
+                  
+                </Fragment>
             ))
           ) :
             (
               configs.map((config) => (
-                <ConfigItem config={config} />
+                <Fragment> 
+                  <ConfigItem config={config} />
+                </Fragment>
+                
+                
               ))
             )}
 

@@ -5,7 +5,7 @@ import ConfigContext from '../../context/config/ConfigContext';
 const SearchBar = () => {
   const configContext = useContext(ConfigContext);
 
-  const text = useRef("");
+  const text = useRef();
 
   const { configSearch, clearSearch } = configContext;
 

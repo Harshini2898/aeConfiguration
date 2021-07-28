@@ -8,7 +8,9 @@ import AddConfig  from "./components/pages/addConfig";
 import ConfigState from "./context/config/ConfigState";
 import background from "./images/Group2.jpg";
 
+
 const App = () => {
+
   return(
     <ConfigState>
     <Router>

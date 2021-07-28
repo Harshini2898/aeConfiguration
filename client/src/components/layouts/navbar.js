@@ -1,5 +1,5 @@
 import React from "react";
-import { Link } from "react-router-dom";
+import { Link , NavLink} from "react-router-dom";
 
 const Navbar = ()=> {
   return(
@@ -14,16 +14,16 @@ const Navbar = ()=> {
     </svg>
     <ul class = "navItems">
       <li>  
-        <Link className="linkText" to ='/'><div class="NavItem">Home</div></Link>
+        <NavLink activeClassName ="selected" to ='/'><div id="firstnav" class="NavItem">Home</div></NavLink>
       </li>
       <li>
-        <Link className="linkText" to ='/add'><div class="NavItem">Add Property</div></Link>
+        <NavLink  className ="selected" to ='/add'><div id="firstnav" class="NavItem">Add Property</div></NavLink>
       </li>
       <li>
-        <Link className="linkText" to ='/add'><div class="NavItem">Import dd</div></Link>
+        <Link  to ='/add'><div id="firstnav" class="NavItem">Import dd</div></Link>
       </li>
       <li>
-        <Link className="linkText" to = '/about'><div class="NavItem" >About</div></Link>
+        <Link to = '/about'><div  id="firstnav" class="NavItem" >About</div></Link>
       </li>
     </ul>
 </div>

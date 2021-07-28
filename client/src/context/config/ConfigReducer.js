@@ -25,6 +25,11 @@ const ConfigReducer = (state, action) => {
         ...state,
         filtered: null
       }
+    case "ADD_CONFIG":
+      return{
+        ...state,
+        configs: [action.payload, ...state.configs]
+      }
     default:
       return state;
   }
